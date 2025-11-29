@@ -13,11 +13,11 @@ document.querySelectorAll('.choice').forEach(el => {
     const userPick = el.id;
     const compPick = choices[Math.floor(Math.random() * 3)];
 
-    playerPickImg.src = `images/${userPick}.png`;
+    playerPickImg.src = `${userPick}.png`;
     playerPickImg.alt = userPick;
     playerPickImg.style.visibility = 'visible';
 
-    computerPickImg.src = `images/${compPick}.png`;
+    computerPickImg.src = `${compPick}.png`;
     computerPickImg.alt = compPick;
     computerPickImg.style.visibility = 'visible';
 
